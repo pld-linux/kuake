@@ -1,5 +1,5 @@
 Summary:	Kuake is a KDE konsole
-Summary(pl):	Kuake to konsola KDE
+Summary(pl):	Kuake - konsola KDE
 Name:		kuake
 Version:	0.2.1
 Release:	2
@@ -19,7 +19,7 @@ Kuake is a KDE konsole application with the look and feel of that in
 the Quake engine.
 
 %description -l pl
-Kuake to kosola dzia³aj±ca w ¶rodowisku KDE, wygl±dem i zachowaniem
+Kuake to konsola dzia³aj±ca w ¶rodowisku KDE, wygl±dem i zachowaniem
 przypomina konsole w grach takich jak Quake.
 
 %prep
@@ -35,12 +35,13 @@ kde_icondir="%{_pixmapsdir}"; export kde_icondir
 %{__make}
 
 %install
-
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Terminals
 
-mv -f $RPM_BUILD_ROOT%{_applnkdir}/Utilities/kuake.desktop $RPM_BUILD_ROOT%{_applnkdir}/Terminals/kuake.desktop
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+install -d $RPM_BUILD_ROOT%{_applnkdir}/Terminals
+mv -f $RPM_BUILD_ROOT%{_applnkdir}/Utilities/kuake.desktop \
+	$RPM_BUILD_ROOT%{_applnkdir}/Terminals/kuake.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -49,6 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS README NEWS TODO
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/Terminals/kuake.desktop
+%dir %{_datadir}/apps/kuake
 %{_datadir}/apps/kuake/kuakeui.rc
+%{_applnkdir}/Terminals/kuake.desktop
 %{_pixmapsdir}/locolor/*/apps/kuake.png
