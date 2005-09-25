@@ -1,13 +1,13 @@
 Summary:	Kuake is a KDE konsole
 Summary(pl):	Kuake - konsola KDE
 Name:		kuake
-Version:	0.3
+Version:	0.4
 Release:	1
 License:	GPL v2
 Group:		Terminals
-Source0:	http://199.231.140.154/software/kuake/%{name}-%{version}.tar.gz
-# Source0-md5:	bd0ebf7af08543bf947ce3d19bfa1c5d
-URL:		http://www.nemohackers.org/index.php?p=kuake
+Source0:	http://public.hunt0r.org/%{name}-%{version}.tar.gz
+# Source0-md5:	92ccfd9298f969b4aeb78998421770c9
+URL:		http://www.kde-apps.org/content/show.php?content=28808
 BuildRequires:	qt-devel
 BuildRequires:	rpmbuild(macros) >= 1.129
 Requires:	qt
