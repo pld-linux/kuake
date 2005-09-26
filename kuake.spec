@@ -8,9 +8,8 @@ Group:		Terminals
 Source0:	http://public.hunt0r.org/%{name}-%{version}.tar.gz
 # Source0-md5:	92ccfd9298f969b4aeb78998421770c9
 URL:		http://www.kde-apps.org/content/show.php?content=28808
-BuildRequires:	qt-devel
+BuildRequires:	kdelibs-devel
 BuildRequires:	rpmbuild(macros) >= 1.129
-Requires:	qt
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
