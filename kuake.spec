@@ -5,7 +5,7 @@ Version:	0.4
 Release:	1
 License:	GPL v2
 Group:		Terminals
-Source0:	http://public.hunt0r.org/%{name}-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	92ccfd9298f969b4aeb78998421770c9
 URL:		http://www.kde-apps.org/content/show.php?content=28808
 BuildRequires:	kdelibs-devel
