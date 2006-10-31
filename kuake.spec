@@ -38,6 +38,8 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}/kde
 mv -f $RPM_BUILD_ROOT%{_datadir}/applnk/Utilities/kuake.desktop \
 	$RPM_BUILD_ROOT%{_desktopdir}/kde/kuake.desktop
 
+mv -f $RPM_BUILD_ROOT%{_iconsdir}/{lo,hi}color
+
 %find_lang %{name} --with-kde
 
 %clean
@@ -50,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_datadir}/apps/kuake
 %{_datadir}/apps/kuake/kuakeui.rc
 %{_desktopdir}/kde/kuake.desktop
-%{_iconsdir}/locolor/*/apps/kuake.png
+%{_iconsdir}/hicolor/*/apps/kuake.png
