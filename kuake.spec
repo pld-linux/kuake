@@ -1,5 +1,5 @@
 Summary:	Kuake is a KDE konsole
-Summary(pl):	Kuake - konsola KDE
+Summary(pl.UTF-8):   Kuake - konsola KDE
 Name:		kuake
 Version:	0.4
 Release:	1
@@ -16,8 +16,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Kuake is a KDE konsole application with the look and feel of that in
 the Quake engine.
 
-%description -l pl
-Kuake to konsola dzia³aj±ca w ¶rodowisku KDE, wygl±dem i zachowaniem
+%description -l pl.UTF-8
+Kuake to konsola dziaÅ‚ajÄ…ca w Å›rodowisku KDE, wyglÄ…dem i zachowaniem
 przypomina konsole w grach takich jak Quake.
 
 %prep
