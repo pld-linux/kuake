@@ -1,5 +1,5 @@
 Summary:	Kuake is a KDE konsole
-Summary(pl.UTF-8):   Kuake - konsola KDE
+Summary(pl.UTF-8):	Kuake - konsola KDE
 Name:		kuake
 Version:	0.4
 Release:	1
